@@ -1,7 +1,7 @@
 # Apache
 
 
-# Comandos Usados
+## Comandos Usados
 
 1.
 ~~~
@@ -87,7 +87,7 @@ sudo service apache2 restart
 ~~~
 
 
-# Autentificación, Autorización y Control de Acceso
+## Autentificación, Autorización y Control de Acceso
 
 9.
 ~~~
