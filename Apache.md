@@ -1,5 +1,6 @@
 # Apache
 
+
 # Comandos Usados
 
 1.
@@ -85,7 +86,8 @@ sudo a2ensite chip555.org.conf
 sudo service apache2 restart
 ~~~
 
-#Autentificación, Autorización y Control de Acceso
+
+# Autentificación, Autorización y Control de Acceso
 
 9.
 ~~~
