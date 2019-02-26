@@ -56,7 +56,9 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 <---------------------------------------------------------->
+
 <VirtualHost *:80>
     ServerAdmin admin@mosquito.com
     ServerName mosquito.com
@@ -65,7 +67,9 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 <---------------------------------------------------------->
+
 <VirtualHost *:80>
     ServerAdmin admin@escherichiacoli.es
     ServerName escherichiacoli.es
@@ -74,7 +78,9 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 <---------------------------------------------------------->
+
 <VirtualHost *:80>
     ServerAdmin admin@chip555.org
     ServerName chip555.org
