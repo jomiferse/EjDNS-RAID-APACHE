@@ -11,11 +11,17 @@ sudo apt-get install apache2
 2.
 ~~~
 sudo mkdir -p /var/www/gato.com/html
+
 <----------------------------------------------->
+
 sudo mkdir -p /var/www/mosquito.com/html
+
 <----------------------------------------------->
+
 sudo mkdir -p /var/www/escherichiacoli.es/html
+
 <----------------------------------------------->
+
 sudo mkdir -p /var/www/chip555.org/html
 ~~~
 
@@ -27,22 +33,34 @@ sudo chmod -R 777 /var/www
 4.
 ~~~
 echo "gato.com" > /var/www/gato.com/html/index.html
+
 <------------------------------------------------------------------------>
+
 echo "mosquito.com" > /var/www/mosquito.com/html/index.html
+
 <------------------------------------------------------------------------>
+
 echo "escherichiacoli.es" > /var/www/escherichiacoli.es/html/index.html
+
 <------------------------------------------------------------------------>
+
 echo "chip555.org" > /var/www/chip555.org/html/index.html
 ~~~
 
 5.
 ~~~
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/gato.com.conf
+
 <----------------------------------------------------------------------------------------------------------->
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mosquito.com.conf
+
 <----------------------------------------------------------------------------------------------------------->
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/escherichiacoli.es.conf
+
 <----------------------------------------------------------------------------------------------------------->
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/chip555.org.conf
 ~~~
 
@@ -94,11 +112,17 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
 7.
 ~~~
 sudo a2ensite gato.com.conf
+
 <-------------------------------------->
+
 sudo a2ensite mosquito.com.conf
+
 <-------------------------------------->
+
 sudo a2ensite escherichiacoli.es.conf
+
 <-------------------------------------->
+
 sudo a2ensite chip555.org.conf
 ~~~
 
@@ -112,7 +136,9 @@ sudo service apache2 restart
 9.
 ~~~
 sudo htpasswd -c /var/www/gato.com/passwords usuario1
+
 <-------------------------------------------------------->
+
 sudo htpasswd  /var/www/gato.com/passwords usuario2
 ~~~
 
