@@ -101,12 +101,12 @@ sudo a2ensite chip555.org.conf
 sudo service apache2 restart
 ~~~
 
-
 ## Autentificación, Autorización y Control de Acceso
 
 9.
 ~~~
 sudo htpasswd -c /var/www/gato.com/passwords usuario1
+<-------------------------------------------------------->
 sudo htpasswd  /var/www/gato.com/passwords usuario2
 ~~~
 
@@ -118,7 +118,6 @@ sudo htpasswd  /var/www/gato.com/passwords usuario2
 	AuthUserFile /var/www/gato.com/passwords
 	Require user usuario1
 </Directory>
-<---------------------------------------------------->
 <Directory /var/www/gato.com/html>        
 	Options Indexes FollowSymLinks MultiViews
 	AllowOverride  none
